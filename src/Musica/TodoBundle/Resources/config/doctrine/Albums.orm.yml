@@ -1,0 +1,41 @@
+Musica\TodoBundle\Entity\Albums:
+    type: entity
+    table: albums
+    indexes:
+        IDX_F4E2474F66589A5A:
+            columns:
+                - artistas_ar_id
+    id:
+        alId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: al_id
+            generator:
+                strategy: SEQUENCE
+    fields:
+        alNombre:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: 'Nombre del album del cual es el dueño el artista'
+            column: al_nombre
+        alAnio:
+            type: date
+            nullable: true
+            comment: 'Fecha del cual se dio el lanzamiento oficial del album'
+            column: al_anio
+    manyToOne:
+        artistasAr:
+            targetEntity: Artistas
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                artistas_ar_id:
+                    referencedColumnName: ar_id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

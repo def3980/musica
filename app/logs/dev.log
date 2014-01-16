@@ -6,3 +6,1255 @@
 [2014-01-15 22:41:05] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
 [2014-01-15 22:53:28] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
 [2014-01-15 22:53:28] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:15:13] request.INFO: Matched route "_welcome" (parameters: "_controller": "Acme\DemoBundle\Controller\WelcomeController::indexAction", "_route": "_welcome") [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:15:13] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:15:14] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:14] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:14] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:15:14] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:15:14] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:15:14] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:14] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:14] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:14] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:15:14] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:15:14] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] request.INFO: Matched route "_welcome" (parameters: "_controller": "Acme\DemoBundle\Controller\WelcomeController::indexAction", "_route": "_welcome") [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] request.INFO: Matched route "_wdt" (parameters: "_controller": "web_profiler.controller.profiler:toolbarAction", "token": "f3732f", "_route": "_wdt") [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:15:16] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:15:17] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:17] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:17] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:15:17] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:15:17] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:15:17] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:17] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:17] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:17] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:15:17] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:15:17] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] request.INFO: Matched route "_configurator_home" (parameters: "_controller": "Sensio\Bundle\DistributionBundle\Controller\ConfiguratorController::checkAction", "_route": "_configurator_home") [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] request.INFO: Matched route "_configurator_step" (parameters: "_controller": "Sensio\Bundle\DistributionBundle\Controller\ConfiguratorController::stepAction", "index": "0", "_route": "_configurator_step") [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:15:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:15:29] request.INFO: Matched route "_wdt" (parameters: "_controller": "web_profiler.controller.profiler:toolbarAction", "token": "4573d2", "_route": "_wdt") [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:15:29] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:16:09] request.INFO: Matched route "_configurator_step" (parameters: "_controller": "Sensio\Bundle\DistributionBundle\Controller\ConfiguratorController::stepAction", "index": "0", "_route": "_configurator_step") [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:16:09] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:16:10] request.INFO: Matched route "_configurator_step" (parameters: "_controller": "Sensio\Bundle\DistributionBundle\Controller\ConfiguratorController::stepAction", "index": "1", "_route": "_configurator_step") [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:16:10] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:16:11] request.INFO: Matched route "_wdt" (parameters: "_controller": "web_profiler.controller.profiler:toolbarAction", "token": "a60de8", "_route": "_wdt") [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:16:11] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:16:20] request.INFO: Matched route "_configurator_step" (parameters: "_controller": "Sensio\Bundle\DistributionBundle\Controller\ConfiguratorController::stepAction", "index": "1", "_route": "_configurator_step") [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:16:20] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:16:21] request.INFO: Matched route "_configurator_final" (parameters: "_controller": "Sensio\Bundle\DistributionBundle\Controller\ConfiguratorController::finalAction", "_route": "_configurator_final") [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:16:21] request.INFO: Matched route "_wdt" (parameters: "_controller": "web_profiler.controller.profiler:toolbarAction", "token": "3d8aee", "_route": "_wdt") [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:16:21] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:16:28] request.INFO: Matched route "_welcome" (parameters: "_controller": "Acme\DemoBundle\Controller\WelcomeController::indexAction", "_route": "_welcome") [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:28] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2014-01-16 22:16:29] request.INFO: Matched route "_wdt" (parameters: "_controller": "web_profiler.controller.profiler:toolbarAction", "token": "95cfce", "_route": "_wdt") [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.controller" to listener "Acme\DemoBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelController". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener::onKernelController". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onKernelResponse". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.finish_request" to listener "Symfony\Component\Security\Http\Firewall::onKernelFinishRequest". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2014-01-16 22:16:29] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate". [] []
+[2014-01-16 22:18:14] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 22:18:15] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 22:23:26] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 22:23:26] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 22:27:16] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT nspname as schema_name FROM pg_namespace WHERE nspname !~ '^pg_.*' and nspname != 'information_schema' [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SHOW search_path [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'tracks' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'tracks' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'tracks' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=26224 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=26224 AND attnum IN (2 ) ORDER BY attnum ASC; [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'artistas' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'artistas' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'artistas' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=26218 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'albums' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'albums' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'albums' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=26231 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2014-01-16 22:27:18] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=26231 AND attnum IN (2 ) ORDER BY attnum ASC; [] []
+[2014-01-16 22:27:18] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 22:31:11] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 22:31:11] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 22:33:07] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 22:33:07] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 22:34:29] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 22:34:29] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 22:34:40] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 22:34:42] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 22:34:55] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 22:34:57] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 22:35:19] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 22:35:20] doctrine.DEBUG: SHOW search_path [] []
+[2014-01-16 22:35:20] doctrine.DEBUG: CREATE TABLE albums (al_id BIGINT NOT NULL, artistas_ar_id BIGINT DEFAULT NULL, al_nombre VARCHAR(100) DEFAULT NULL, PRIMARY KEY(al_id)) [] []
+[2014-01-16 22:35:20] doctrine.DEBUG: CREATE INDEX IDX_F4E2474F66589A5A ON albums (artistas_ar_id) [] []
+[2014-01-16 22:35:20] doctrine.DEBUG: CREATE TABLE artistas (ar_id BIGINT NOT NULL, ar_nombre VARCHAR(100) DEFAULT NULL, PRIMARY KEY(ar_id)) [] []
+[2014-01-16 22:35:20] doctrine.DEBUG: CREATE TABLE tracks (tr_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, tr_nombre VARCHAR(100) DEFAULT NULL, PRIMARY KEY(tr_id)) [] []
+[2014-01-16 22:35:20] doctrine.DEBUG: CREATE INDEX IDX_246D2A2EDADE7FBA ON tracks (albums_al_id) [] []
+[2014-01-16 22:35:20] doctrine.DEBUG: CREATE SEQUENCE albums_al_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 22:35:20] doctrine.DEBUG: CREATE SEQUENCE artistas_ar_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 22:35:20] doctrine.DEBUG: CREATE SEQUENCE tracks_tr_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 22:35:20] doctrine.DEBUG: ALTER TABLE albums ADD CONSTRAINT FK_F4E2474F66589A5A FOREIGN KEY (artistas_ar_id) REFERENCES artistas (ar_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 22:35:20] doctrine.DEBUG: ALTER TABLE tracks ADD CONSTRAINT FK_246D2A2EDADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 22:35:20] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 22:46:38] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT nspname as schema_name FROM pg_namespace WHERE nspname !~ '^pg_.*' and nspname != 'information_schema' [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SHOW search_path [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'artistas' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'artistas' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'artistas' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=37679 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'tracks' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'tracks' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'tracks' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=37695 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'albums' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'albums' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'albums' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2014-01-16 22:46:39] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=37687 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2014-01-16 22:46:39] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:00:28] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT nspname as schema_name FROM pg_namespace WHERE nspname !~ '^pg_.*' and nspname != 'information_schema' [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SHOW search_path [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'tracks' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'tracks' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'tracks' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=37730 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'artistas' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'artistas' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'artistas' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=37714 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'albums' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'albums' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'albums' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=37722 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'covers' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'covers' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'covers' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2014-01-16 23:00:29] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=37738 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2014-01-16 23:00:30] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:02:33] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:02:33] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:02:53] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:02:53] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:15:15] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:15:19] doctrine.DEBUG: "START TRANSACTION" [] []
+[2014-01-16 23:15:19] doctrine.DEBUG: DELETE FROM covers [] []
+[2014-01-16 23:15:19] doctrine.DEBUG: DELETE FROM tracks [] []
+[2014-01-16 23:15:19] doctrine.DEBUG: DELETE FROM albums [] []
+[2014-01-16 23:15:19] doctrine.DEBUG: DELETE FROM artistas [] []
+[2014-01-16 23:15:19] doctrine.DEBUG: "ROLLBACK" [] []
+[2014-01-16 23:15:19] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:15:56] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:15:59] doctrine.DEBUG: "START TRANSACTION" [] []
+[2014-01-16 23:15:59] doctrine.DEBUG: DELETE FROM covers [] []
+[2014-01-16 23:15:59] doctrine.DEBUG: DELETE FROM tracks [] []
+[2014-01-16 23:15:59] doctrine.DEBUG: DELETE FROM albums [] []
+[2014-01-16 23:15:59] doctrine.DEBUG: DELETE FROM artistas [] []
+[2014-01-16 23:15:59] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:19:59] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:20:00] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:20:13] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:20:15] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:20:25] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: SHOW search_path [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: CREATE TABLE albums (al_id BIGINT NOT NULL, artistas_ar_id BIGINT DEFAULT NULL, al_nombre VARCHAR(100) DEFAULT NULL, al_anio DATE DEFAULT NULL, PRIMARY KEY(al_id)) [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: CREATE INDEX IDX_F4E2474F66589A5A ON albums (artistas_ar_id) [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: CREATE TABLE artistas (ar_id BIGINT NOT NULL, ar_nombre VARCHAR(100) DEFAULT NULL, PRIMARY KEY(ar_id)) [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: CREATE TABLE covers (co_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, co_nombre VARCHAR(100) DEFAULT NULL, co_tamanio NUMERIC(10, 2) DEFAULT NULL, co_bin BYTEA DEFAULT NULL, co_extension VARCHAR(100) DEFAULT NULL, PRIMARY KEY(co_id)) [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: CREATE INDEX IDX_F08DF1B2DADE7FBA ON covers (albums_al_id) [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: CREATE TABLE tracks (tr_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, tr_nombre VARCHAR(100) DEFAULT NULL, tr_longitud TIME(0) WITHOUT TIME ZONE DEFAULT NULL, PRIMARY KEY(tr_id)) [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: CREATE INDEX IDX_246D2A2EDADE7FBA ON tracks (albums_al_id) [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: CREATE SEQUENCE albums_al_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: CREATE SEQUENCE artistas_ar_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: CREATE SEQUENCE covers_co_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: CREATE SEQUENCE tracks_tr_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: ALTER TABLE albums ADD CONSTRAINT FK_F4E2474F66589A5A FOREIGN KEY (artistas_ar_id) REFERENCES artistas (ar_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: ALTER TABLE covers ADD CONSTRAINT FK_F08DF1B2DADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:20:26] doctrine.DEBUG: ALTER TABLE tracks ADD CONSTRAINT FK_246D2A2EDADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:20:26] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:20:41] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:20:45] doctrine.DEBUG: "START TRANSACTION" [] []
+[2014-01-16 23:20:45] doctrine.DEBUG: DELETE FROM covers [] []
+[2014-01-16 23:20:45] doctrine.DEBUG: DELETE FROM tracks [] []
+[2014-01-16 23:20:45] doctrine.DEBUG: DELETE FROM albums [] []
+[2014-01-16 23:20:45] doctrine.DEBUG: DELETE FROM artistas [] []
+[2014-01-16 23:20:45] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:20:45] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:20:45] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:20:45] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:22:41] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:22:42] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:22:47] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:22:49] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:23:08] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: SHOW search_path [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: CREATE TABLE albums (al_id BIGINT NOT NULL, artistas_ar_id BIGINT DEFAULT NULL, al_nombre VARCHAR(100) DEFAULT NULL, al_anio DATE DEFAULT NULL, PRIMARY KEY(al_id)) [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: CREATE INDEX IDX_F4E2474F66589A5A ON albums (artistas_ar_id) [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: CREATE TABLE artistas (ar_id BIGINT NOT NULL, ar_nombre VARCHAR(100) DEFAULT NULL, PRIMARY KEY(ar_id)) [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: CREATE TABLE covers (co_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, co_nombre VARCHAR(100) DEFAULT NULL, co_tamanio NUMERIC(10, 2) DEFAULT NULL, co_bin BYTEA DEFAULT NULL, co_extension VARCHAR(100) DEFAULT NULL, PRIMARY KEY(co_id)) [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: CREATE INDEX IDX_F08DF1B2DADE7FBA ON covers (albums_al_id) [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: CREATE TABLE tracks (tr_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, tr_nombre VARCHAR(100) DEFAULT NULL, tr_longitud TIME(0) WITHOUT TIME ZONE DEFAULT NULL, PRIMARY KEY(tr_id)) [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: CREATE INDEX IDX_246D2A2EDADE7FBA ON tracks (albums_al_id) [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: CREATE SEQUENCE albums_al_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: CREATE SEQUENCE artistas_ar_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: CREATE SEQUENCE covers_co_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: CREATE SEQUENCE tracks_tr_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: ALTER TABLE albums ADD CONSTRAINT FK_F4E2474F66589A5A FOREIGN KEY (artistas_ar_id) REFERENCES artistas (ar_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: ALTER TABLE covers ADD CONSTRAINT FK_F08DF1B2DADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:23:09] doctrine.DEBUG: ALTER TABLE tracks ADD CONSTRAINT FK_246D2A2EDADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:23:09] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:26:47] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:26:54] doctrine.DEBUG: "START TRANSACTION" [] []
+[2014-01-16 23:26:54] doctrine.DEBUG: DELETE FROM covers [] []
+[2014-01-16 23:26:54] doctrine.DEBUG: DELETE FROM tracks [] []
+[2014-01-16 23:26:54] doctrine.DEBUG: DELETE FROM albums [] []
+[2014-01-16 23:26:54] doctrine.DEBUG: DELETE FROM artistas [] []
+[2014-01-16 23:26:54] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:26:54] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:26:54] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:26:54] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:30:12] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:30:15] doctrine.DEBUG: "START TRANSACTION" [] []
+[2014-01-16 23:30:15] doctrine.DEBUG: DELETE FROM covers [] []
+[2014-01-16 23:30:15] doctrine.DEBUG: DELETE FROM tracks [] []
+[2014-01-16 23:30:15] doctrine.DEBUG: DELETE FROM albums [] []
+[2014-01-16 23:30:15] doctrine.DEBUG: DELETE FROM artistas [] []
+[2014-01-16 23:30:15] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:30:15] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:30:15] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:30:15] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:30:15] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":5,"2":"Metallica"} []
+[2014-01-16 23:30:15] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":6,"2":"Megadeth"} []
+[2014-01-16 23:30:15] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":7,"2":"Kreator"} []
+[2014-01-16 23:30:15] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":8,"2":"Slayer"} []
+[2014-01-16 23:30:15] doctrine.DEBUG: "COMMIT" [] []
+[2014-01-16 23:30:15] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:30:38] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:30:44] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:31:07] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:31:08] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:31:17] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:31:19] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:31:25] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: SHOW search_path [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: CREATE TABLE albums (al_id BIGINT NOT NULL, artistas_ar_id BIGINT DEFAULT NULL, al_nombre VARCHAR(100) DEFAULT NULL, al_anio DATE DEFAULT NULL, PRIMARY KEY(al_id)) [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: CREATE INDEX IDX_F4E2474F66589A5A ON albums (artistas_ar_id) [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: CREATE TABLE artistas (ar_id BIGINT NOT NULL, ar_nombre VARCHAR(100) DEFAULT NULL, PRIMARY KEY(ar_id)) [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: CREATE TABLE covers (co_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, co_nombre VARCHAR(100) DEFAULT NULL, co_tamanio NUMERIC(10, 2) DEFAULT NULL, co_bin BYTEA DEFAULT NULL, co_extension VARCHAR(100) DEFAULT NULL, PRIMARY KEY(co_id)) [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: CREATE INDEX IDX_F08DF1B2DADE7FBA ON covers (albums_al_id) [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: CREATE TABLE tracks (tr_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, tr_nombre VARCHAR(100) DEFAULT NULL, tr_longitud TIME(0) WITHOUT TIME ZONE DEFAULT NULL, PRIMARY KEY(tr_id)) [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: CREATE INDEX IDX_246D2A2EDADE7FBA ON tracks (albums_al_id) [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: CREATE SEQUENCE albums_al_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: CREATE SEQUENCE artistas_ar_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: CREATE SEQUENCE covers_co_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: CREATE SEQUENCE tracks_tr_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: ALTER TABLE albums ADD CONSTRAINT FK_F4E2474F66589A5A FOREIGN KEY (artistas_ar_id) REFERENCES artistas (ar_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: ALTER TABLE covers ADD CONSTRAINT FK_F08DF1B2DADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:31:26] doctrine.DEBUG: ALTER TABLE tracks ADD CONSTRAINT FK_246D2A2EDADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:31:26] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:52:46] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: "START TRANSACTION" [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: DELETE FROM covers [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: DELETE FROM tracks [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: DELETE FROM albums [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: DELETE FROM artistas [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":1,"2":"Metallica"} []
+[2014-01-16 23:52:50] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":2,"2":"Megadeth"} []
+[2014-01-16 23:52:50] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":3,"2":"Kreator"} []
+[2014-01-16 23:52:50] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":4,"2":"Slayer"} []
+[2014-01-16 23:52:50] doctrine.DEBUG: SELECT t0.ar_id AS ar_id1, t0.ar_nombre AS ar_nombre2 FROM artistas t0 [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:52:50] doctrine.DEBUG: "COMMIT" [] []
+[2014-01-16 23:52:50] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:53:54] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:53:55] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:54:03] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:54:04] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:54:12] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: SHOW search_path [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: CREATE TABLE albums (al_id BIGINT NOT NULL, artistas_ar_id BIGINT DEFAULT NULL, al_nombre VARCHAR(100) DEFAULT NULL, al_anio DATE DEFAULT NULL, PRIMARY KEY(al_id)) [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: CREATE INDEX IDX_F4E2474F66589A5A ON albums (artistas_ar_id) [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: CREATE TABLE artistas (ar_id BIGINT NOT NULL, ar_nombre VARCHAR(100) DEFAULT NULL, PRIMARY KEY(ar_id)) [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: CREATE TABLE covers (co_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, co_nombre VARCHAR(100) DEFAULT NULL, co_tamanio NUMERIC(10, 2) DEFAULT NULL, co_bin BYTEA DEFAULT NULL, co_extension VARCHAR(100) DEFAULT NULL, PRIMARY KEY(co_id)) [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: CREATE INDEX IDX_F08DF1B2DADE7FBA ON covers (albums_al_id) [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: CREATE TABLE tracks (tr_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, tr_nombre VARCHAR(100) DEFAULT NULL, tr_longitud TIME(0) WITHOUT TIME ZONE DEFAULT NULL, PRIMARY KEY(tr_id)) [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: CREATE INDEX IDX_246D2A2EDADE7FBA ON tracks (albums_al_id) [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: CREATE SEQUENCE albums_al_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: CREATE SEQUENCE artistas_ar_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: CREATE SEQUENCE covers_co_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: CREATE SEQUENCE tracks_tr_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: ALTER TABLE albums ADD CONSTRAINT FK_F4E2474F66589A5A FOREIGN KEY (artistas_ar_id) REFERENCES artistas (ar_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: ALTER TABLE covers ADD CONSTRAINT FK_F08DF1B2DADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:54:13] doctrine.DEBUG: ALTER TABLE tracks ADD CONSTRAINT FK_246D2A2EDADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:54:13] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:54:20] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: "START TRANSACTION" [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: DELETE FROM covers [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: DELETE FROM tracks [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: DELETE FROM albums [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: DELETE FROM artistas [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":1,"2":"Metallica"} []
+[2014-01-16 23:54:25] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":2,"2":"Megadeth"} []
+[2014-01-16 23:54:25] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":3,"2":"Kreator"} []
+[2014-01-16 23:54:25] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":4,"2":"Slayer"} []
+[2014-01-16 23:54:25] doctrine.DEBUG: SELECT t0.ar_id AS ar_id1, t0.ar_nombre AS ar_nombre2 FROM artistas t0 [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:54:25] doctrine.DEBUG: INSERT INTO albums (al_id, al_nombre, al_anio, artistas_ar_id) VALUES (?, ?, ?, ?) {"1":1,"2":"Kill 'Em All","3":"1983-01-16 23:54:25","4":"NULL"} []
+[2014-01-16 23:54:25] doctrine.DEBUG: INSERT INTO albums (al_id, al_nombre, al_anio, artistas_ar_id) VALUES (?, ?, ?, ?) {"1":2,"2":"Ride the Lightning","3":"1984-01-16 23:54:25","4":"NULL"} []
+[2014-01-16 23:54:25] doctrine.DEBUG: INSERT INTO albums (al_id, al_nombre, al_anio, artistas_ar_id) VALUES (?, ?, ?, ?) {"1":3,"2":"Master of Puppets","3":"1986-01-16 23:54:25","4":"NULL"} []
+[2014-01-16 23:54:25] doctrine.DEBUG: INSERT INTO albums (al_id, al_nombre, al_anio, artistas_ar_id) VALUES (?, ?, ?, ?) {"1":4,"2":"...And Justice for All","3":"1988-01-16 23:54:25","4":"NULL"} []
+[2014-01-16 23:54:25] doctrine.DEBUG: "COMMIT" [] []
+[2014-01-16 23:54:25] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:56:23] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:56:24] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:56:34] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:56:35] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:56:40] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: SHOW search_path [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: CREATE TABLE albums (al_id BIGINT NOT NULL, artistas_ar_id BIGINT DEFAULT NULL, al_nombre VARCHAR(100) DEFAULT NULL, al_anio DATE DEFAULT NULL, PRIMARY KEY(al_id)) [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: CREATE INDEX IDX_F4E2474F66589A5A ON albums (artistas_ar_id) [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: CREATE TABLE artistas (ar_id BIGINT NOT NULL, ar_nombre VARCHAR(100) DEFAULT NULL, PRIMARY KEY(ar_id)) [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: CREATE TABLE covers (co_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, co_nombre VARCHAR(100) DEFAULT NULL, co_tamanio NUMERIC(10, 2) DEFAULT NULL, co_bin BYTEA DEFAULT NULL, co_extension VARCHAR(100) DEFAULT NULL, PRIMARY KEY(co_id)) [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: CREATE INDEX IDX_F08DF1B2DADE7FBA ON covers (albums_al_id) [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: CREATE TABLE tracks (tr_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, tr_nombre VARCHAR(100) DEFAULT NULL, tr_longitud TIME(0) WITHOUT TIME ZONE DEFAULT NULL, PRIMARY KEY(tr_id)) [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: CREATE INDEX IDX_246D2A2EDADE7FBA ON tracks (albums_al_id) [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: CREATE SEQUENCE albums_al_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: CREATE SEQUENCE artistas_ar_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: CREATE SEQUENCE covers_co_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: CREATE SEQUENCE tracks_tr_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: ALTER TABLE albums ADD CONSTRAINT FK_F4E2474F66589A5A FOREIGN KEY (artistas_ar_id) REFERENCES artistas (ar_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: ALTER TABLE covers ADD CONSTRAINT FK_F08DF1B2DADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:56:41] doctrine.DEBUG: ALTER TABLE tracks ADD CONSTRAINT FK_246D2A2EDADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:56:41] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:56:46] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:56:49] doctrine.DEBUG: "START TRANSACTION" [] []
+[2014-01-16 23:56:49] doctrine.DEBUG: DELETE FROM covers [] []
+[2014-01-16 23:56:49] doctrine.DEBUG: DELETE FROM tracks [] []
+[2014-01-16 23:56:49] doctrine.DEBUG: DELETE FROM albums [] []
+[2014-01-16 23:56:49] doctrine.DEBUG: DELETE FROM artistas [] []
+[2014-01-16 23:56:49] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:56:49] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:56:49] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:56:49] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:56:49] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":1,"2":"Metallica"} []
+[2014-01-16 23:56:49] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":2,"2":"Megadeth"} []
+[2014-01-16 23:56:49] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":3,"2":"Kreator"} []
+[2014-01-16 23:56:49] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":4,"2":"Slayer"} []
+[2014-01-16 23:56:49] doctrine.DEBUG: SELECT t0.ar_id AS ar_id1, t0.ar_nombre AS ar_nombre2 FROM artistas t0 [] []
+[2014-01-16 23:56:49] doctrine.DEBUG: "ROLLBACK" [] []
+[2014-01-16 23:56:49] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:57:29] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:57:30] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:57:35] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:57:37] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:57:42] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: SHOW search_path [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: CREATE TABLE albums (al_id BIGINT NOT NULL, artistas_ar_id BIGINT DEFAULT NULL, al_nombre VARCHAR(100) DEFAULT NULL, al_anio DATE DEFAULT NULL, PRIMARY KEY(al_id)) [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: CREATE INDEX IDX_F4E2474F66589A5A ON albums (artistas_ar_id) [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: CREATE TABLE artistas (ar_id BIGINT NOT NULL, ar_nombre VARCHAR(100) DEFAULT NULL, PRIMARY KEY(ar_id)) [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: CREATE TABLE covers (co_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, co_nombre VARCHAR(100) DEFAULT NULL, co_tamanio NUMERIC(10, 2) DEFAULT NULL, co_bin BYTEA DEFAULT NULL, co_extension VARCHAR(100) DEFAULT NULL, PRIMARY KEY(co_id)) [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: CREATE INDEX IDX_F08DF1B2DADE7FBA ON covers (albums_al_id) [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: CREATE TABLE tracks (tr_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, tr_nombre VARCHAR(100) DEFAULT NULL, tr_longitud TIME(0) WITHOUT TIME ZONE DEFAULT NULL, PRIMARY KEY(tr_id)) [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: CREATE INDEX IDX_246D2A2EDADE7FBA ON tracks (albums_al_id) [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: CREATE SEQUENCE albums_al_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: CREATE SEQUENCE artistas_ar_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: CREATE SEQUENCE covers_co_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: CREATE SEQUENCE tracks_tr_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: ALTER TABLE albums ADD CONSTRAINT FK_F4E2474F66589A5A FOREIGN KEY (artistas_ar_id) REFERENCES artistas (ar_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: ALTER TABLE covers ADD CONSTRAINT FK_F08DF1B2DADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:57:43] doctrine.DEBUG: ALTER TABLE tracks ADD CONSTRAINT FK_246D2A2EDADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:57:43] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:57:51] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:57:55] doctrine.DEBUG: "START TRANSACTION" [] []
+[2014-01-16 23:57:55] doctrine.DEBUG: DELETE FROM covers [] []
+[2014-01-16 23:57:55] doctrine.DEBUG: DELETE FROM tracks [] []
+[2014-01-16 23:57:55] doctrine.DEBUG: DELETE FROM albums [] []
+[2014-01-16 23:57:55] doctrine.DEBUG: DELETE FROM artistas [] []
+[2014-01-16 23:57:55] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:57:55] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:57:55] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:57:55] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:57:55] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":1,"2":"Metallica"} []
+[2014-01-16 23:57:55] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":2,"2":"Megadeth"} []
+[2014-01-16 23:57:55] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":3,"2":"Kreator"} []
+[2014-01-16 23:57:55] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":4,"2":"Slayer"} []
+[2014-01-16 23:57:55] doctrine.DEBUG: SELECT t0.ar_id AS ar_id1, t0.ar_nombre AS ar_nombre2 FROM artistas t0 [] []
+[2014-01-16 23:58:13] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:58:15] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:58:19] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:58:20] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:58:25] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:58:26] doctrine.DEBUG: SHOW search_path [] []
+[2014-01-16 23:58:26] doctrine.DEBUG: CREATE TABLE albums (al_id BIGINT NOT NULL, artistas_ar_id BIGINT DEFAULT NULL, al_nombre VARCHAR(100) DEFAULT NULL, al_anio DATE DEFAULT NULL, PRIMARY KEY(al_id)) [] []
+[2014-01-16 23:58:26] doctrine.DEBUG: CREATE INDEX IDX_F4E2474F66589A5A ON albums (artistas_ar_id) [] []
+[2014-01-16 23:58:26] doctrine.DEBUG: CREATE TABLE artistas (ar_id BIGINT NOT NULL, ar_nombre VARCHAR(100) DEFAULT NULL, PRIMARY KEY(ar_id)) [] []
+[2014-01-16 23:58:26] doctrine.DEBUG: CREATE TABLE covers (co_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, co_nombre VARCHAR(100) DEFAULT NULL, co_tamanio NUMERIC(10, 2) DEFAULT NULL, co_bin BYTEA DEFAULT NULL, co_extension VARCHAR(100) DEFAULT NULL, PRIMARY KEY(co_id)) [] []
+[2014-01-16 23:58:26] doctrine.DEBUG: CREATE INDEX IDX_F08DF1B2DADE7FBA ON covers (albums_al_id) [] []
+[2014-01-16 23:58:26] doctrine.DEBUG: CREATE TABLE tracks (tr_id BIGINT NOT NULL, albums_al_id BIGINT DEFAULT NULL, tr_nombre VARCHAR(100) DEFAULT NULL, tr_longitud TIME(0) WITHOUT TIME ZONE DEFAULT NULL, PRIMARY KEY(tr_id)) [] []
+[2014-01-16 23:58:26] doctrine.DEBUG: CREATE INDEX IDX_246D2A2EDADE7FBA ON tracks (albums_al_id) [] []
+[2014-01-16 23:58:27] doctrine.DEBUG: CREATE SEQUENCE albums_al_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:58:27] doctrine.DEBUG: CREATE SEQUENCE artistas_ar_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:58:27] doctrine.DEBUG: CREATE SEQUENCE covers_co_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:58:27] doctrine.DEBUG: CREATE SEQUENCE tracks_tr_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2014-01-16 23:58:27] doctrine.DEBUG: ALTER TABLE albums ADD CONSTRAINT FK_F4E2474F66589A5A FOREIGN KEY (artistas_ar_id) REFERENCES artistas (ar_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:58:27] doctrine.DEBUG: ALTER TABLE covers ADD CONSTRAINT FK_F08DF1B2DADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:58:27] doctrine.DEBUG: ALTER TABLE tracks ADD CONSTRAINT FK_246D2A2EDADE7FBA FOREIGN KEY (albums_al_id) REFERENCES albums (al_id) NOT DEFERRABLE INITIALLY IMMEDIATE [] []
+[2014-01-16 23:58:27] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []
+[2014-01-16 23:58:45] event.DEBUG: Notified event "console.command" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onCommand". [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: "START TRANSACTION" [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: DELETE FROM covers [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: DELETE FROM tracks [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: DELETE FROM albums [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: DELETE FROM artistas [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: SELECT NEXTVAL('artistas_ar_id_seq') [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":1,"2":"Metallica"} []
+[2014-01-16 23:58:49] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":2,"2":"Megadeth"} []
+[2014-01-16 23:58:49] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":3,"2":"Kreator"} []
+[2014-01-16 23:58:49] doctrine.DEBUG: INSERT INTO artistas (ar_id, ar_nombre) VALUES (?, ?) {"1":4,"2":"Slayer"} []
+[2014-01-16 23:58:49] doctrine.DEBUG: SELECT t0.ar_id AS ar_id1, t0.ar_nombre AS ar_nombre2 FROM artistas t0 [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: SELECT NEXTVAL('albums_al_id_seq') [] []
+[2014-01-16 23:58:49] doctrine.DEBUG: INSERT INTO albums (al_id, al_nombre, al_anio, artistas_ar_id) VALUES (?, ?, ?, ?) {"1":1,"2":"Kill 'Em All","3":"1983-01-16 23:58:49","4":"1"} []
+[2014-01-16 23:58:49] doctrine.DEBUG: INSERT INTO albums (al_id, al_nombre, al_anio, artistas_ar_id) VALUES (?, ?, ?, ?) {"1":2,"2":"Ride the Lightning","3":"1984-01-16 23:58:49","4":"1"} []
+[2014-01-16 23:58:49] doctrine.DEBUG: INSERT INTO albums (al_id, al_nombre, al_anio, artistas_ar_id) VALUES (?, ?, ?, ?) {"1":3,"2":"Master of Puppets","3":"1986-01-16 23:58:49","4":"1"} []
+[2014-01-16 23:58:49] doctrine.DEBUG: INSERT INTO albums (al_id, al_nombre, al_anio, artistas_ar_id) VALUES (?, ?, ?, ?) {"1":4,"2":"...And Justice for All","3":"1988-01-16 23:58:49","4":"1"} []
+[2014-01-16 23:58:49] doctrine.DEBUG: "COMMIT" [] []
+[2014-01-16 23:58:49] event.DEBUG: Notified event "console.terminate" to listener "Symfony\Bridge\Monolog\Handler\ConsoleHandler::onTerminate". [] []

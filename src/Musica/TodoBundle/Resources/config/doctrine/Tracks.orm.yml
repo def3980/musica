@@ -1,0 +1,41 @@
+Musica\TodoBundle\Entity\Tracks:
+    type: entity
+    table: tracks
+    indexes:
+        IDX_246D2A2EDADE7FBA:
+            columns:
+                - albums_al_id
+    id:
+        trId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: tr_id
+            generator:
+                strategy: SEQUENCE
+    fields:
+        trNombre:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: 'Nombre de las canciones que contiene cada album del artista'
+            column: tr_nombre
+        trLongitud:
+            type: time
+            nullable: true
+            comment: 'Tiempo registado de cada cancion del album'
+            column: tr_longitud
+    manyToOne:
+        albumsAl:
+            targetEntity: Albums
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                albums_al_id:
+                    referencedColumnName: al_id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
