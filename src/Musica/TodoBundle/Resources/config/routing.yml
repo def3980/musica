@@ -1,3 +1,19 @@
 todo_homepage:
-    pattern:  /hello/{name}
+    pattern:  /index
     defaults: { _controller: TodoBundle:Default:index }
+
+todo_login:
+    pattern: /login
+    defaults: { _controller: TodoBundle:Default:login }
+
+todo_register:
+    pattern: /register
+    defaults: { _controller: TodoBundle:Default:register }
+    
+todo_combo_albums:
+    pattern: /cmb-albums
+    defaults: { _controller: TodoBundle:Default:comboAlbums }
+
+todo_data:
+    pattern: /data
+    defaults: { _controller: TodoBundle:Default:data }

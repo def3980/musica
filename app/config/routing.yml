@@ -2,3 +2,9 @@ todo:
     resource: "@TodoBundle/Resources/config/routing.yml"
     prefix:   /
 
+remove_trailing_slash:
+    path: /{url}
+    defaults: { _controller: TodoBundle:Redirecting:removeTrailingSlash }
+    requirements:
+        url: .*/$
+        _method: GET
