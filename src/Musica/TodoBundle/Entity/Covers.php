@@ -186,4 +186,14 @@ class Covers
     {
         return $this->albumsAl;
     }
+    
+    /**
+     * Metodo magico para convertir Object a String
+     *
+     * @return string 
+     */
+    public function __toString()
+    {
+        return $this->getCoNombre();
+    }
 }

@@ -126,4 +126,14 @@ class Albums
     {
         return $this->artistasAr;
     }
+    
+    /**
+     * Metodo magico para convertir Object a String
+     *
+     * @return string 
+     */
+    public function __toString()
+    {
+        return $this->getAlNombre();
+    }
 }
