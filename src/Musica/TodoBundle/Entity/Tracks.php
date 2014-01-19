@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Tracks
  *
- * @ORM\Table(name="tracks", indexes={@ORM\Index(name="IDX_246D2A2EDADE7FBA", columns={"albums_al_id"})})
+ * @ORM\Table(name="tracks", indexes={@ORM\Index(name="fk_tracks_albums_idx", columns={"albums_al_id"})})
  * @ORM\Entity
  */
 class Tracks
@@ -15,10 +15,9 @@ class Tracks
     /**
      * @var integer
      *
-     * @ORM\Column(name="tr_id", type="bigint")
+     * @ORM\Column(name="tr_id", type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="SEQUENCE")
-     * @ORM\SequenceGenerator(sequenceName="tracks_tr_id_seq", allocationSize=1, initialValue=1)
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $trId;
 
@@ -30,9 +29,9 @@ class Tracks
     private $trNombre;
 
     /**
-     * @var \DateTime
+     * @var string
      *
-     * @ORM\Column(name="tr_longitud", type="time", nullable=true)
+     * @ORM\Column(name="tr_longitud", type="string", length=5, nullable=true)
      */
     private $trLongitud;
 
@@ -67,7 +66,7 @@ class Tracks
     public function setTrNombre($trNombre)
     {
         $this->trNombre = $trNombre;
-
+    
         return $this;
     }
 
@@ -84,20 +83,20 @@ class Tracks
     /**
      * Set trLongitud
      *
-     * @param \DateTime $trLongitud
+     * @param string $trLongitud
      * @return Tracks
      */
     public function setTrLongitud($trLongitud)
     {
         $this->trLongitud = $trLongitud;
-
+    
         return $this;
     }
 
     /**
      * Get trLongitud
      *
-     * @return \DateTime 
+     * @return string 
      */
     public function getTrLongitud()
     {
@@ -113,7 +112,7 @@ class Tracks
     public function setAlbumsAl(\Musica\TodoBundle\Entity\Albums $albumsAl = null)
     {
         $this->albumsAl = $albumsAl;
-
+    
         return $this;
     }
 

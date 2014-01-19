@@ -54,12 +54,15 @@
             }
             
             .table thead th:nth-child(1) {
-                text-align: center;
                 width: 6%;
             }
             .table thead th:nth-child(2),
-            .table thead th:nth-child(3){
+            .table thead th:nth-child(3) {
                 width: 47%;
+            }
+            .table thead th:nth-child(1),
+            .table tbody td:nth-child(1) {
+                text-align: center;
             }
         </style>        
         <!-- Wrap all page content here -->
@@ -132,7 +135,7 @@
                                 <tr>
                                     <td style="text-align: center">{{ loop.index }}</td>
                                     <td>{{ tr.trNombre }}</td>
-                                    <td>{{ tr.trLongitud | date('Hi') }}</td>
+                                    <td>{{ tr.trLongitud }}</td>
                                 </tr>
 {% endfor %}
                             </tbody>
@@ -170,21 +173,23 @@
                 $('.selectpicker').selectpicker('refresh');
                 
                 $('.selectpicker').change(function(){
-                    $('.table tbody tr:has(td)').remove();
+{#                    $('.table tbody').html('<tr><td>1</td><td>Cancion</td><td>Longitud</td></tr>');#}
+{#                    $('.table tbody tr:has(td)').fadeOut('slow').remove();#}
                     $.ajax({
                         type    : "POST",
                         url     : "{{ path('todo_data') }}",
                         data    : "id=" + $('.selectpicker').val(),
-                        dataType: "json",
+{#                        dataType: "json",#}
                         success : function(data) {
-                            $.each(data, function(i,o) {
+                            $('.table tbody').html(data);
+                            {#$.each(data, function(i,o) {
                                 $('.table tbody').append(
                                     $('<tr/>')
                                         .append($('<td/>').text(i+1))
                                         .append($('<td/>').text(o.trNombre))
                                         .append($('<td/>').text(o.trLongitud))
                                 );
-                            });
+                            });#}
                         }
                     });
                 });

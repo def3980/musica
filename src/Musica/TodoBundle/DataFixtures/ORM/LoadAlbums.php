@@ -39,7 +39,7 @@ class LoadAlbums extends AbstractFixture implements OrderedFixtureInterface, Con
                     foreach ($albums as $disco):
                         $al = new Albums();
                         $al->setAlNombre(Util::getUCWord($disco['album']));
-                        $al->setAlAnio(new \DateTime($disco['anio']));
+                        $al->setAlAnio($disco['anio']);
                         $al->setArtistasAr($nombre);
                         $manager->persist($al);
                     endforeach;

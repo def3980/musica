@@ -2,31 +2,33 @@ Musica\TodoBundle\Entity\Albums:
     type: entity
     table: albums
     indexes:
-        IDX_F4E2474F66589A5A:
+        fk_albums_artistas1_idx:
             columns:
                 - artistas_ar_id
     id:
         alId:
-            type: bigint
+            type: integer
             nullable: false
             unsigned: false
-            comment: ''
+            comment: Identificacdor
             id: true
             column: al_id
             generator:
-                strategy: SEQUENCE
+                strategy: IDENTITY
     fields:
         alNombre:
             type: string
             nullable: true
             length: 100
             fixed: false
-            comment: 'Nombre del album del cual es el dueño el artista'
+            comment: 'Nombre del album'
             column: al_nombre
         alAnio:
-            type: date
+            type: string
             nullable: true
-            comment: 'Fecha del cual se dio el lanzamiento oficial del album'
+            length: 5
+            fixed: true
+            comment: 'Anio de lanzamineto del album. Nota: solo se neceita a manera de string'
             column: al_anio
     manyToOne:
         artistasAr:

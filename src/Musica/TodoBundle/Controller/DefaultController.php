@@ -17,10 +17,12 @@ class DefaultController extends Controller
                     . 'FROM TodoBundle:Tracks tr '
                     . 'JOIN tr.albumsAl al '
                     . 'JOIN al.artistasAr ar '
-                    . 'WHERE al.alNombre '
-                    . 'LIKE :album'
-                )->setParameter('album', '%And%')
+                    . 'WHERE al.alId = :album'
+                )->setParameter('album', 1)
                 ->getArrayResult();
+//                    . 'WHERE al.alNombre '
+//                    . 'LIKE :album'
+//                )->setParameter('album', '%And%')
 //        Util::getMyDump($dql);
         return $this->render('TodoBundle:Default:index.html.twig', array('tracks' => $dql));
     }
@@ -76,15 +78,33 @@ class DefaultController extends Controller
     }
     
     public function dataAction(Request $request) {
-        $em = $this->getDoctrine()->getEntityManager();
-        $data = $em->createQuery(
-                        'SELECT tr, al '
-                        . 'FROM TodoBundle:Tracks tr '
-                        . 'JOIN tr.albumsAl al '
-                        . 'WHERE al.alId = :id'
-                    )->setParameter('id', $request->get('id'))
-                    ->getArrayResult();
+        $em = $this->getDoctrine()->getManager();
+//        $data = $em->createQuery(
+//                        'SELECT tr, al '
+//                        . 'FROM TodoBundle:Tracks tr '
+//                        . 'JOIN tr.albumsAl al '
+//                        . 'WHERE al.alId = :id'
+//                    )->setParameter('id', $request->get('id'))
+//                    ->getArrayResult();
+        $data = $em->createQueryBuilder()
+                    ->select('tr','al')
+                    ->from('TodoBundle:Tracks', 'tr')
+                    ->innerJoin('tr.albumsAl', 'al')
+                    ->where('al.alId = :id')
+                    ->setParameter('id', $request->get('id'))
+                    ->getQuery()
+                    ->getArrayResult()
+                ;
 //        Util::getMyDump($data);
-        return new Response(Util::getJSON($data));
+        $html = '';
+        foreach ($data as $k => $tracks):
+            $html .= '<tr>'."\n";
+            $html .= '  <td>'.($k+1).'</td>'."\n";
+            $html .= '  <td>'.$tracks['trNombre'].'</td>'."\n";
+            $html .= '  <td>'.$tracks['trLongitud'].'</td>'."\n";
+            $html .= '</tr>'."\n";
+        endforeach;
+        return new Response($html);
+//        return new Response(Util::getJSON($data));
     }
 }

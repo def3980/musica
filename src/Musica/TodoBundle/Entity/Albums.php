@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Albums
  *
- * @ORM\Table(name="albums", indexes={@ORM\Index(name="IDX_F4E2474F66589A5A", columns={"artistas_ar_id"})})
+ * @ORM\Table(name="albums", indexes={@ORM\Index(name="fk_albums_artistas1_idx", columns={"artistas_ar_id"})})
  * @ORM\Entity
  */
 class Albums
@@ -15,10 +15,9 @@ class Albums
     /**
      * @var integer
      *
-     * @ORM\Column(name="al_id", type="bigint")
+     * @ORM\Column(name="al_id", type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="SEQUENCE")
-     * @ORM\SequenceGenerator(sequenceName="albums_al_id_seq", allocationSize=1, initialValue=1)
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $alId;
 
@@ -30,9 +29,9 @@ class Albums
     private $alNombre;
 
     /**
-     * @var \DateTime
+     * @var string
      *
-     * @ORM\Column(name="al_anio", type="date", nullable=true)
+     * @ORM\Column(name="al_anio", type="string", length=5, nullable=true)
      */
     private $alAnio;
 
@@ -67,7 +66,7 @@ class Albums
     public function setAlNombre($alNombre)
     {
         $this->alNombre = $alNombre;
-
+    
         return $this;
     }
 
@@ -84,20 +83,20 @@ class Albums
     /**
      * Set alAnio
      *
-     * @param \DateTime $alAnio
+     * @param string $alAnio
      * @return Albums
      */
     public function setAlAnio($alAnio)
     {
         $this->alAnio = $alAnio;
-
+    
         return $this;
     }
 
     /**
      * Get alAnio
      *
-     * @return \DateTime 
+     * @return string 
      */
     public function getAlAnio()
     {
@@ -113,7 +112,7 @@ class Albums
     public function setArtistasAr(\Musica\TodoBundle\Entity\Artistas $artistasAr = null)
     {
         $this->artistasAr = $artistasAr;
-
+    
         return $this;
     }
 

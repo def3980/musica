@@ -15,10 +15,9 @@ class Artistas
     /**
      * @var integer
      *
-     * @ORM\Column(name="ar_id", type="bigint")
+     * @ORM\Column(name="ar_id", type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="SEQUENCE")
-     * @ORM\SequenceGenerator(sequenceName="artistas_ar_id_seq", allocationSize=1, initialValue=1)
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $arId;
 
@@ -50,7 +49,7 @@ class Artistas
     public function setArNombre($arNombre)
     {
         $this->arNombre = $arNombre;
-
+    
         return $this;
     }
 

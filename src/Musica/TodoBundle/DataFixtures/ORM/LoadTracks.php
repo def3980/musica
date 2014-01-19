@@ -45,7 +45,7 @@ class LoadTracks extends AbstractFixture implements OrderedFixtureInterface, Con
                     foreach ($tracks as $cancion):
                         $tr = new Tracks();
                         $tr->setTrNombre(Util::getUCWord($cancion['titulo']));
-                        $tr->setTrLongitud(new \DateTime($cancion['long']));
+                        $tr->setTrLongitud($cancion['long']);
                         $tr->setAlbumsAl($disco);
                         $manager->persist($tr);
                     endforeach;
@@ -64,7 +64,7 @@ class LoadTracks extends AbstractFixture implements OrderedFixtureInterface, Con
                     foreach ($tracks as $cancion):
                         $tr = new Tracks();
                         $tr->setTrNombre(Util::getUCWord($cancion['titulo']));
-                        $tr->setTrLongitud(new \DateTime($cancion['long']));
+                        $tr->setTrLongitud($cancion['long']);
                         $tr->setAlbumsAl($disco);
                         $manager->persist($tr);
                     endforeach;
@@ -83,7 +83,7 @@ class LoadTracks extends AbstractFixture implements OrderedFixtureInterface, Con
                     foreach ($tracks as $cancion):
                         $tr = new Tracks();
                         $tr->setTrNombre(Util::getUCWord($cancion['titulo']));
-                        $tr->setTrLongitud(new \DateTime($cancion['long']));
+                        $tr->setTrLongitud($cancion['long']);
                         $tr->setAlbumsAl($disco);
                         $manager->persist($tr);
                     endforeach;
@@ -103,7 +103,7 @@ class LoadTracks extends AbstractFixture implements OrderedFixtureInterface, Con
                     foreach ($tracks as $cancion):
                         $tr = new Tracks();
                         $tr->setTrNombre(Util::getUCWord($cancion['titulo']));
-                        $tr->setTrLongitud(new \DateTime($cancion['long']));
+                        $tr->setTrLongitud($cancion['long']);
                         $tr->setAlbumsAl($disco);
                         $manager->persist($tr);
                     endforeach;

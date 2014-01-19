@@ -2,31 +2,33 @@ Musica\TodoBundle\Entity\Tracks:
     type: entity
     table: tracks
     indexes:
-        IDX_246D2A2EDADE7FBA:
+        fk_tracks_albums_idx:
             columns:
                 - albums_al_id
     id:
         trId:
-            type: bigint
+            type: integer
             nullable: false
             unsigned: false
-            comment: ''
+            comment: Identificacdor
             id: true
             column: tr_id
             generator:
-                strategy: SEQUENCE
+                strategy: IDENTITY
     fields:
         trNombre:
             type: string
             nullable: true
             length: 100
             fixed: false
-            comment: 'Nombre de las canciones que contiene cada album del artista'
+            comment: 'Nombre de la cancion'
             column: tr_nombre
         trLongitud:
-            type: time
+            type: string
             nullable: true
-            comment: 'Tiempo registado de cada cancion del album'
+            length: 5
+            fixed: true
+            comment: 'Longitud de la cancion. Nota: solo se neceita a manera de string'
             column: tr_longitud
     manyToOne:
         albumsAl:
