@@ -7,21 +7,19 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\ORM\EntityManager;
 use Musica\TodoBundle\Util\Util;
+use Musica\TodoBundle\Util\COnsultas;
 
 class DefaultController extends Controller
 {   
     public function indexAction() {
+        $dql = Util::getAllArAlTr();
         $em = $this->getDoctrine()->getManager();
-        $dql = $em->createQuery(
-                    'SELECT tr, al, ar '
-                    . 'FROM TodoBundle:Tracks tr '
-                    . 'JOIN tr.albumsAl al '
-                    . 'JOIN al.artistasAr ar '
-                    . 'WHERE al.alId = :album'
-                )->setParameter('album', 4)
-//                ->useResultCache(true)
+        $dql .= 'WHERE al.alId = :album '
+                . 'ORDER BY al.alNombre ASC';
+        $q = $em->createQuery($dql)
+                ->setParameter('album', 1)
                 ->getArrayResult();
-        return $this->render('TodoBundle:Default:index.html.twig', array('tracks' => $dql));
+        return $this->render('TodoBundle:Default:index.html.twig', array('tracks' => $q));
     }
     
     public function loginAction (Request $request) {
@@ -61,19 +59,16 @@ class DefaultController extends Controller
     }
     
     public function comboAlbumsAction() {
+        $dql = Util::getAllAl();
         $em = $this->getDoctrine()->getManager();
-        $combo = $em->createQuery('SELECT al FROM TodoBundle:Albums al ORDER BY al.alNombre')
-//                    ->useResultCache(true)
+        $combo = $em->createQuery($dql)
                     ->getArrayResult();
 
         return new Response(Util::getJSON($combo));
     }
     
     public function dataAction(Request $request) {
-        $dql = 'SELECT tr, al, ar '
-                . 'FROM TodoBundle:Tracks tr '
-                . 'JOIN tr.albumsAl al '
-                . 'JOIN al.artistasAr ar ';
+        $dql = Util::getAllArAlTr();
         switch ($request->get('opc')):
             case 'like':
                 $dql .= 'WHERE al.alNombre LIKE :id';
@@ -82,12 +77,16 @@ class DefaultController extends Controller
                 $dql .= 'WHERE al.alId = :id';
             break;
         endswitch;
-        $q = $this->getDoctrine()
-                    ->getManager()
-                    ->createQuery($dql)
-                    ->setParameter('id', ($request->get('opc') == 'like' ? '%'.$request->get('id').'%' : $request->get('id')))
-//                    ->useResultCache(true)
-                    ->getArrayResult();
+        $em = $this->getDoctrine()->getManager();
+        $q = $em->createQuery($dql)
+                ->setParameter(
+                    'id', (
+                        $request->get('opc') == 'like' ? 
+                        '%'.$request->get('id').'%' : 
+                        $request->get('id')
+                    )
+                )
+                ->getArrayResult();
         $html = '';
         foreach ($q as $k => $tracks):
             $html .= '<tr>'."\n";
@@ -96,17 +95,14 @@ class DefaultController extends Controller
             $html .= '  <td>'.$tracks['trLongitud'].'</td>'."\n";
             $html .= '</tr>'."\n";
         endforeach;
-        $q = array_merge($q, array(array('html' => $html)));
-//        Util::getMyDump($q);
-//        return new Response($html);
-        return new Response(Util::getJSON($q));
+
+        return new Response(Util::getJSON(array_merge($q, array(array('html' => $html)))));
     }
     
     public function searchAction() {
+        $dql = Util::getAllAl();
         $em = $this->getDoctrine()->getManager();
-        $search = $em->createQuery('SELECT al.alNombre FROM TodoBundle:Albums al ORDER BY al.alNombre')
-//                    ->useResultCache(true)
-                    ->getArrayResult();
+        $search = $em->createQuery($dql)->getArrayResult();
 
         return new Response(Util::getJSON($search));
     }

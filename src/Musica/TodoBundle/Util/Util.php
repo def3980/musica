@@ -31,4 +31,17 @@ class Util {
         return json_encode($array);
     }
     
+    static public function getAllArAlTr() {
+        $dql = 'SELECT tr, al, ar '
+                . 'FROM TodoBundle:Tracks tr '
+                . 'JOIN tr.albumsAl al '
+                . 'JOIN al.artistasAr ar ';
+
+        return $dql;
+    }
+    
+    static public function getAllAl() {
+        return 'SELECT al FROM TodoBundle:Albums al';
+    }
+    
 }
