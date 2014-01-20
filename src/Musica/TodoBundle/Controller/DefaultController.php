@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\ORM\EntityManager;
 use Musica\TodoBundle\Util\Util;
-use Musica\TodoBundle\Util\COnsultas;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class DefaultController extends Controller
 {   
@@ -105,5 +105,19 @@ class DefaultController extends Controller
         $search = $em->createQuery($dql)->getArrayResult();
 
         return new Response(Util::getJSON($search));
+    }
+    
+    public function uploadAction(Request $request) {
+        
+        if ($request->getMethod() == 'POST'):
+            $imagen = $request->files->get('cover');
+            if ($imagen instanceof UploadedFile && $imagen->getError() == '0'):
+                echo "<pre>";
+                print_r($imagen->getClientOriginalName());
+                echo "</pre>";
+                die();
+            endif;
+        endif;
+        
     }
 }

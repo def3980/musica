@@ -154,15 +154,24 @@
                         </table>
                     </div><!-- /example -->
                 </div>
-                <pre id="result">
-                    
-                </pre>
+                <div class="highlight">
+                    <div class="row">
+                        <form id="frm" method="post" action="{{ path('todo_upload') }}" enctype="multipart/form-data" autocomplete="off">
+                            <div class="col-xs-6" style="padding-top: 5px">
+                                <input type="file" name="cover" id="cover" />
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <button id="btnGuardar" class="btn btn-default" type="submit">Guardar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div id="footer">
             <div class="container">
-                <p class="text-muted">Place sticky footer content here.</p>
+                <p class="text-muted">Place sticky footer content here.</p>                
             </div>
         </div>
         <script type="text/javascript">

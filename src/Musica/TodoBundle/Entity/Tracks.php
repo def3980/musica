@@ -66,7 +66,7 @@ class Tracks
     public function setTrNombre($trNombre)
     {
         $this->trNombre = $trNombre;
-    
+
         return $this;
     }
 
@@ -89,7 +89,7 @@ class Tracks
     public function setTrLongitud($trLongitud)
     {
         $this->trLongitud = $trLongitud;
-    
+
         return $this;
     }
 
@@ -112,7 +112,7 @@ class Tracks
     public function setAlbumsAl(\Musica\TodoBundle\Entity\Albums $albumsAl = null)
     {
         $this->albumsAl = $albumsAl;
-    
+
         return $this;
     }
 

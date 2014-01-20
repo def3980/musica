@@ -1,0 +1,57 @@
+Musica\TodoBundle\Entity\Binarios:
+    type: entity
+    table: binarios
+    indexes:
+        fk_binarios_albums1_idx:
+            columns:
+                - albums_al_id
+    id:
+        biId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: Identificacdor
+            id: true
+            column: bi_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        biNombre:
+            type: string
+            nullable: true
+            length: 254
+            fixed: false
+            comment: 'Nombre del archivo de imagen, pdf, docx, xlsx, etc...'
+            column: bi_nombre
+        biTamanioBytes:
+            type: decimal
+            nullable: true
+            precision: 10
+            scale: 2
+            comment: 'Tamanio del archivo binario'
+            column: bi_tamanio_bytes
+        biBin:
+            type: blob
+            nullable: true
+            length: null
+            fixed: false
+            comment: 'Contenido binario del archivo.'
+            column: bi_bin
+        biExt:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: 'Extension del archivo subido a la base de datos'
+            column: bi_ext
+    manyToOne:
+        albumsAl:
+            targetEntity: Albums
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                albums_al_id:
+                    referencedColumnName: al_id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

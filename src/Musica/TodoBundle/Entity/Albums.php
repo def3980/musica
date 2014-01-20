@@ -66,7 +66,7 @@ class Albums
     public function setAlNombre($alNombre)
     {
         $this->alNombre = $alNombre;
-    
+
         return $this;
     }
 
@@ -89,7 +89,7 @@ class Albums
     public function setAlAnio($alAnio)
     {
         $this->alAnio = $alAnio;
-    
+
         return $this;
     }
 
@@ -112,7 +112,7 @@ class Albums
     public function setArtistasAr(\Musica\TodoBundle\Entity\Artistas $artistasAr = null)
     {
         $this->artistasAr = $artistasAr;
-    
+
         return $this;
     }
 

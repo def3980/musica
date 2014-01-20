@@ -49,7 +49,7 @@ class Artistas
     public function setArNombre($arNombre)
     {
         $this->arNombre = $arNombre;
-    
+
         return $this;
     }
 
