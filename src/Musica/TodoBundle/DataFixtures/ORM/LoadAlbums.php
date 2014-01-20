@@ -44,6 +44,30 @@ class LoadAlbums extends AbstractFixture implements OrderedFixtureInterface, Con
                         $manager->persist($al);
                     endforeach;
                 break;
+                case 'Megadeth':
+                    $albums = array(
+                        array('album' => 'Rust in Peace', 'anio' => 1990),
+                    );
+                    foreach ($albums as $disco):
+                        $al = new Albums();
+                        $al->setAlNombre(Util::getUCWord($disco['album']));
+                        $al->setAlAnio($disco['anio']);
+                        $al->setArtistasAr($nombre);
+                        $manager->persist($al);
+                    endforeach;
+                break;
+                case 'Kreator':
+                    $albums = array(
+                        array('album' => 'Coma of Souls', 'anio' => 1990),
+                    );
+                    foreach ($albums as $disco):
+                        $al = new Albums();
+                        $al->setAlNombre(Util::getUCWord($disco['album']));
+                        $al->setAlAnio($disco['anio']);
+                        $al->setArtistasAr($nombre);
+                        $manager->persist($al);
+                    endforeach;
+                break;
             endswitch;
         endforeach;
         

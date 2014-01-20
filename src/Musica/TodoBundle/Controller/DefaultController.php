@@ -9,7 +9,7 @@ use Doctrine\ORM\EntityManager;
 use Musica\TodoBundle\Util\Util;
 
 class DefaultController extends Controller
-{
+{   
     public function indexAction() {
         $em = $this->getDoctrine()->getManager();
         $dql = $em->createQuery(
@@ -19,7 +19,7 @@ class DefaultController extends Controller
                     . 'JOIN al.artistasAr ar '
                     . 'WHERE al.alId = :album'
                 )->setParameter('album', 4)
-                ->useResultCache(true)
+//                ->useResultCache(true)
                 ->getArrayResult();
         return $this->render('TodoBundle:Default:index.html.twig', array('tracks' => $dql));
     }
@@ -63,52 +63,49 @@ class DefaultController extends Controller
     public function comboAlbumsAction() {
         $em = $this->getDoctrine()->getManager();
         $combo = $em->createQuery('SELECT al FROM TodoBundle:Albums al ORDER BY al.alNombre')
-                    ->useResultCache(true)
+//                    ->useResultCache(true)
                     ->getArrayResult();
 
         return new Response(Util::getJSON($combo));
     }
     
     public function dataAction(Request $request) {
-//        $em = $this->getDoctrine()->getEntityManager();
-//        $data = $em->createQueryBuilder()
-//                    ->select('tr','al')
-//                    ->from('TodoBundle:Tracks', 'tr')
-//                    ->innerJoin('tr.albumsAl', 'al');
-//        if (gettype($request->get('id')) == 'string'):
-//            $data->where('al.alNombre LIKE :id')
-//                    ->setParameter('id', '%'.$request->get('id').'%');
-//        else:
-//            $data->where('al.alId = :id')
-//                    ->setParameter('id', $request->get('id'));
-//        endif;
-//            $data->getQuery()->getArrayResult();
-        $qb = $this->getDoctrine()->getEntityManager()
-                ->createQueryBuilder()
-                ->select('tr','al')
-                ->from('TodoBundle:Tracks', 'tr')
-                ->innerJoin('tr.albumsAl', 'al');
-                $qb->where('al.alNombre LIKE :id')
-                ->setParameter('id', '%ri%')
-                ->getQuery()
-                ->getArrayResult();
-        Util::getMyDump($qb);
+        $dql = 'SELECT tr, al, ar '
+                . 'FROM TodoBundle:Tracks tr '
+                . 'JOIN tr.albumsAl al '
+                . 'JOIN al.artistasAr ar ';
+        switch ($request->get('opc')):
+            case 'like':
+                $dql .= 'WHERE al.alNombre LIKE :id';
+            break;
+            default:
+                $dql .= 'WHERE al.alId = :id';
+            break;
+        endswitch;
+        $q = $this->getDoctrine()
+                    ->getManager()
+                    ->createQuery($dql)
+                    ->setParameter('id', ($request->get('opc') == 'like' ? '%'.$request->get('id').'%' : $request->get('id')))
+//                    ->useResultCache(true)
+                    ->getArrayResult();
         $html = '';
-        foreach ($data as $k => $tracks):
+        foreach ($q as $k => $tracks):
             $html .= '<tr>'."\n";
             $html .= '  <td>'.($k+1).'</td>'."\n";
             $html .= '  <td>'.$tracks['trNombre'].'</td>'."\n";
             $html .= '  <td>'.$tracks['trLongitud'].'</td>'."\n";
             $html .= '</tr>'."\n";
         endforeach;
-        return new Response($html);
-//        return new Response(Util::getJSON($data));
+        $q = array_merge($q, array(array('html' => $html)));
+//        Util::getMyDump($q);
+//        return new Response($html);
+        return new Response(Util::getJSON($q));
     }
     
     public function searchAction() {
         $em = $this->getDoctrine()->getManager();
         $search = $em->createQuery('SELECT al.alNombre FROM TodoBundle:Albums al ORDER BY al.alNombre')
-                    ->useResultCache(true)
+//                    ->useResultCache(true)
                     ->getArrayResult();
 
         return new Response(Util::getJSON($search));

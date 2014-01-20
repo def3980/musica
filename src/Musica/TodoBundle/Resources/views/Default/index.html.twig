@@ -113,7 +113,7 @@
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="B&uacute;squeda..." data-provide="typeahead" />
                                 <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="button">Buscar</button>
+                                    <button id="btnBuscar" class="btn btn-primary" type="button">Buscar</button>
                                 </span>
                             </div><!-- /input-group -->
                         </div>
@@ -129,7 +129,7 @@
                             </a>
                             <div class="media-body">
                                 <h4 class="media-heading">{{ tracks.0.albumsAl.alNombre }}</h4>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. <strong>{{ tracks | length }} canciones en total.</strong>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. <strong><span id="cant">{{ tracks | length }}</span> canciones en total.</strong>
                             </div>
                         </div>
                     </div>                    
@@ -167,8 +167,9 @@
         </div>
         <script type="text/javascript">
             $(function() {
-                var select = '<select class="selectpicker show-menu-arrow show-tick" data-size="7">';
                 $.ajaxSetup({ async: false });
+                /** --------------------------------- CARGANDO COMBO CON AJAX */
+                var select = '<select class="selectpicker show-menu-arrow show-tick" data-size="7">';
                 $.getJSON('{{ path('todo_combo_albums') }}', function(data) {
                     $.each(data, function(i,o) {
                         select += '<option value="'+o.alId+'">'+o.alNombre+'</option>';
@@ -176,26 +177,40 @@
                 });
                 select += '</select>';
                 $('.page-header div div:first').append(select);
-                $('.selectpicker').selectpicker('refresh');
+                $('.selectpicker').selectpicker('refresh');                
+                /** --------------------------------------------------------- */
+
                 
+                /** ------- CARGANDO LISTA DE OPCIONES CON TYPEAHEAD CON AJAX */
                 var array = [];
                 $.getJSON('{{ path('todo_search') }}', function(data) {
-                    $.each(data, function(i,o) {
-                        array.push(o.alNombre);
-                    });
+                    $.each(data, function(i,o) { array.push(o.alNombre); });
                 });
                 $('.form-control').typeahead({ source : array });
+                /** --------------------------------------------------------- */
 
-                $('.selectpicker').change(function() {
+                /** --------- REALIZANDO CONSULTA AJAX Y CARGANDO EN LA TABLA */
+                $('.selectpicker').change(function() {                    
                     $.get('{{ path('todo_data') }}', { id : $(this).val() } , function(data) {
-                        $('.table tbody').html(data);
+                        $('.panel-heading strong').text(data[0].albumsAl.artistasAr.arNombre);
+                        $('.media-heading').text(data[0].albumsAl.alNombre);
+                        $('#cant').text(data.length - 1);
+                        $('.table tbody').html(data[data.length - 1].html);
+                    },'json');
+                });
+                /** --------------------------------------------------------- */
+                
+                /** --------- REALIZANDO CONSULTA AJAX Y CARGANDO EN LA TABLA */
+                $('#btnBuscar').bind('click', function() {
+                    $.getJSON('{{ path('todo_data') }}', { id : $('.form-control').val(), opc : 'like' } , function(data) {
+                        $('.panel-heading strong').text(data[0].albumsAl.artistasAr.arNombre);
+                        $('.media-heading').text(data[0].albumsAl.alNombre);
+                        $('#cant').text(data.length - 1);
+                        $('.table tbody').html(data[data.length - 1].html);
                     });
                 });
-                $('.btn').bind('click', function() {
-                    $.get('{{ path('todo_data') }}', { id : $(this).val() } , function(data) {
-                        $('.table tbody').html(data);
-                    });
-                });
+                /** --------------------------------------------------------- */
+                $.ajaxSetup({ async: true });
             });
         </script>
 {% endblock %}

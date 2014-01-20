@@ -108,6 +108,47 @@ class LoadTracks extends AbstractFixture implements OrderedFixtureInterface, Con
                         $manager->persist($tr);
                     endforeach;
                 break;
+                case Util::getUCWord('Rust in Peace'):
+                    $tracks = array(
+                        array('titulo' => 'Holy Wars... The Punishment Due', 'long' => '6:32'),
+                        array('titulo' => 'Hangar 18', 'long' => '5:11'),
+                        array('titulo' => 'Take No Prisoners', 'long' => '3:27'),
+                        array('titulo' => 'Five Magics', 'long' => '5:39'),
+                        array('titulo' => 'Poison Was The Cure', 'long' => '2:56'),
+                        array('titulo' => 'Lucretia', 'long' => '3:56'),
+                        array('titulo' => 'Tornado of Souls', 'long' => '5:19'),
+                        array('titulo' => 'Dawn Patrol', 'long' => '1:51'),
+                        array('titulo' => 'Rust In Peace... Polaris', 'long' => '5:44'),
+                    );
+                    foreach ($tracks as $cancion):
+                        $tr = new Tracks();
+                        $tr->setTrNombre(Util::getUCWord($cancion['titulo']));
+                        $tr->setTrLongitud($cancion['long']);
+                        $tr->setAlbumsAl($disco);
+                        $manager->persist($tr);
+                    endforeach;
+                break;
+                case Util::getUCWord('Coma of Souls'):
+                    $tracks = array(
+                        array('titulo' => 'When the Sun Burns Red', 'long' => '5:28'),
+                        array('titulo' => 'Coma of Souls', 'long' => '4:18'),
+                        array('titulo' => 'People of the Lie', 'long' => '3:15'),
+                        array('titulo' => 'World Beyond', 'long' => '2:02'),
+                        array('titulo' => 'Terror Zone', 'long' => '5:54'),
+                        array('titulo' => 'Agents of Brutality', 'long' => '5:16'),
+                        array('titulo' => 'Material World Paranoia', 'long' => '4:59'),
+                        array('titulo' => 'Twisted Urges', 'long' => '2:46'),
+                        array('titulo' => 'Hidden Dictator', 'long' => '4:47'),
+                        array('titulo' => 'Mental Slavery', 'long' => '5:43'),
+                    );
+                    foreach ($tracks as $cancion):
+                        $tr = new Tracks();
+                        $tr->setTrNombre(Util::getUCWord($cancion['titulo']));
+                        $tr->setTrLongitud($cancion['long']);
+                        $tr->setAlbumsAl($disco);
+                        $manager->persist($tr);
+                    endforeach;
+                break;
             endswitch;
         endforeach;
         
