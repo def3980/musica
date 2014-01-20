@@ -6,6 +6,7 @@
 {% endblock %}
 {% block incluir_javascripts %}
         <script src="{{ asset('bundles/todo/js/bootstrap-select/bootstrap-select.js') }}"></script>
+        <script src="{{ asset('bundles/todo/js/bootstrap3-typeahead/bootstrap3-typeahead.js') }}"></script>
 {% endblock %}
 {% block body %}
         <style>
@@ -106,6 +107,17 @@
             <div class="container">
                 <div class="page-header">
                     <h1>Sticky footer with fixed navbar</h1>
+                    <div class="row">
+                        <div class="col-xs-8"></div>
+                        <div class="col-xs-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="B&uacute;squeda..." data-provide="typeahead" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">Buscar</button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
                 </div>
                 <div class="panel panel-default">
                     <!-- Default panel contents -->
@@ -154,43 +166,34 @@
             </div>
         </div>
         <script type="text/javascript">
-            $(function(){
-                var option = '<select class="selectpicker show-menu-arrow show-tick" data-size="7">';
-                $.ajax({
-                    async   : false,
-                    type    : "POST",
-                    url     : "{{ path('todo_combo_albums') }}",
-                    dataType: "json",
-                    success : function(data) {
-                        $.each(data, function(i,o) {
-                            option += '<option value="'+o.alId+'">'+o.alNombre+'</option>';
-                        });
-                    }
+            $(function() {
+                var select = '<select class="selectpicker show-menu-arrow show-tick" data-size="7">';
+                $.ajaxSetup({ async: false });
+                $.getJSON('{{ path('todo_combo_albums') }}', function(data) {
+                    $.each(data, function(i,o) {
+                        select += '<option value="'+o.alId+'">'+o.alNombre+'</option>';
+                    });
                 });
-                option += '</select>';
-                $('.page-header').append(option);
-                $('.selectpicker').selectpicker();
+                select += '</select>';
+                $('.page-header div div:first').append(select);
                 $('.selectpicker').selectpicker('refresh');
                 
-                $('.selectpicker').change(function(){
-{#                    $('.table tbody').html('<tr><td>1</td><td>Cancion</td><td>Longitud</td></tr>');#}
-{#                    $('.table tbody tr:has(td)').fadeOut('slow').remove();#}
-                    $.ajax({
-                        type    : "POST",
-                        url     : "{{ path('todo_data') }}",
-                        data    : "id=" + $('.selectpicker').val(),
-{#                        dataType: "json",#}
-                        success : function(data) {
-                            $('.table tbody').html(data);
-                            {#$.each(data, function(i,o) {
-                                $('.table tbody').append(
-                                    $('<tr/>')
-                                        .append($('<td/>').text(i+1))
-                                        .append($('<td/>').text(o.trNombre))
-                                        .append($('<td/>').text(o.trLongitud))
-                                );
-                            });#}
-                        }
+                var array = [];
+                $.getJSON('{{ path('todo_search') }}', function(data) {
+                    $.each(data, function(i,o) {
+                        array.push(o.alNombre);
+                    });
+                });
+                $('.form-control').typeahead({ source : array });
+
+                $('.selectpicker').change(function() {
+                    $.get('{{ path('todo_data') }}', { id : $(this).val() } , function(data) {
+                        $('.table tbody').html(data);
+                    });
+                });
+                $('.btn').bind('click', function() {
+                    $.get('{{ path('todo_data') }}', { id : $(this).val() } , function(data) {
+                        $('.table tbody').html(data);
                     });
                 });
             });

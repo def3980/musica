@@ -17,3 +17,7 @@ todo_combo_albums:
 todo_data:
     pattern: /data
     defaults: { _controller: TodoBundle:Default:data }
+
+todo_search:
+    pattern: /search
+    defaults: { _controller: TodoBundle:Default:search }
