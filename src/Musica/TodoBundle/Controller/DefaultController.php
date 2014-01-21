@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\ORM\EntityManager;
 use Musica\TodoBundle\Util\Util;
+use Musica\TodoBundle\Entity\Binarios;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class DefaultController extends Controller
@@ -112,8 +113,22 @@ class DefaultController extends Controller
         if ($request->getMethod() == 'POST'):
             $imagen = $request->files->get('cover');
             if ($imagen instanceof UploadedFile && $imagen->getError() == '0'):
+                $al = $this->getDoctrine()->getRepository('TodoBundle:Albums')->find($request->get('alId'));
+                $bi = new Binarios();
+                $bi->setBiNombre($imagen->getClientOriginalName());
+                $bi->setBiTamanioBytes(intval($imagen->getClientSize()));
+                $bi->setBiBin(file_get_contents($imagen->getFileInfo()));
+                $bi->setBiExt($imagen->getMimeType());
+                $bi->setAlbumsAl($al);
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($bi);
+                $em->flush();
                 echo "<pre>";
-                print_r($imagen->getClientOriginalName());
+                echo $imagen->getClientOriginalName().'<br />';
+                echo ceil($imagen->getClientSize() / 1024).' KB<br />';
+                echo $imagen->getFileInfo().'<br />';
+                echo $imagen->getMimeType().'<br />';
                 echo "</pre>";
                 die();
             endif;

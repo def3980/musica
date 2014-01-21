@@ -163,6 +163,7 @@
                             <div class="col-xs-6 text-right">
                                 <button id="btnGuardar" class="btn btn-default" type="submit">Guardar</button>
                             </div>
+                            <input type="hidden" name="alId" id="alId" />
                         </form>
                     </div>
                 </div>
@@ -186,7 +187,8 @@
                 });
                 select += '</select>';
                 $('.page-header div div:first').append(select);
-                $('.selectpicker').selectpicker('refresh');                
+                $('.selectpicker').selectpicker('refresh');
+                $('#alId').val($('.selectpicker').val());
                 /** --------------------------------------------------------- */
 
                 
@@ -199,7 +201,8 @@
                 /** --------------------------------------------------------- */
 
                 /** --------- REALIZANDO CONSULTA AJAX Y CARGANDO EN LA TABLA */
-                $('.selectpicker').change(function() {                    
+                $('.selectpicker').change(function() {
+                    $('#alId').val($(this).val());
                     $.get('{{ path('todo_data') }}', { id : $(this).val() } , function(data) {
                         $('.panel-heading strong').text(data[0].albumsAl.artistasAr.arNombre);
                         $('.media-heading').text(data[0].albumsAl.alNombre);
