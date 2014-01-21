@@ -44,4 +44,12 @@ class Util {
         return 'SELECT al FROM TodoBundle:Albums al';
     }
     
+    static public function getAllAlBi() {
+        $dql = 'SELECT bi, al '
+                . 'FROM TodoBundle:Binarios bi '
+                . 'JOIN bi.albumsAl al ';
+
+        return $dql;
+    }
+    
 }

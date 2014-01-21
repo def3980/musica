@@ -125,7 +125,7 @@
                     <div class="panel-body">
                         <div class="media">
                             <a class="pull-left" href="#">
-                                <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+                                <img class="img media-object" src="{{ path('todo_image', { 'id' : cover.0.albumsAl.alId }) }}" height="64" width="64" alt="Generic placeholder image">
                             </a>
                             <div class="media-body">
                                 <h4 class="media-heading">{{ tracks.0.albumsAl.alNombre }}</h4>

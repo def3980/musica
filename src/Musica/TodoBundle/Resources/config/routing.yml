@@ -25,3 +25,7 @@ todo_search:
 todo_upload:
     pattern: /upload
     defaults: { _controller: TodoBundle:Default:upload }
+
+todo_image:
+    pattern: /image-{id}.jpg
+    defaults: { _controller: TodoBundle:Default:viewImage }

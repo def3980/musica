@@ -3,24 +3,31 @@
 namespace Musica\TodoBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Doctrine\ORM\EntityManager;
 use Musica\TodoBundle\Util\Util;
 use Musica\TodoBundle\Entity\Binarios;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class DefaultController extends Controller
 {   
     public function indexAction() {
-        $dql = Util::getAllArAlTr();
+        $dql = Util::getAllArAlTr();        
         $em = $this->getDoctrine()->getManager();
         $dql .= 'WHERE al.alId = :album '
                 . 'ORDER BY al.alNombre ASC';
         $q = $em->createQuery($dql)
                 ->setParameter('album', 1)
                 ->getArrayResult();
-        return $this->render('TodoBundle:Default:index.html.twig', array('tracks' => $q));
+        
+        $dql1 = Util::getAllAlBi();
+        $dql1 .= 'WHERE al.alId = :album ';
+        $q1 = $em->createQuery($dql1)
+                ->setParameter('album', 1)
+                ->getArrayResult();
+        return $this->render('TodoBundle:Default:index.html.twig', array('tracks' => $q, 'cover' => $q1));
     }
     
     public function loginAction (Request $request) {
@@ -70,12 +77,15 @@ class DefaultController extends Controller
     
     public function dataAction(Request $request) {
         $dql = Util::getAllArAlTr();
+        $dql1 = Util::getAllAlBi();
         switch ($request->get('opc')):
             case 'like':
                 $dql .= 'WHERE al.alNombre LIKE :id';
+                $dql1 .= 'WHERE al.alNombre LIKE :id';
             break;
             default:
                 $dql .= 'WHERE al.alId = :id';
+                $dql1 .= 'WHERE al.alId = :id';
             break;
         endswitch;
         $em = $this->getDoctrine()->getManager();
@@ -88,6 +98,11 @@ class DefaultController extends Controller
                     )
                 )
                 ->getArrayResult();
+        $q1 = $em->createQuery($dql1)
+                ->setParameter(
+                    'id', ($request->get('opc') == 'like' ? '%'.$request->get('id').'%' : $request->get('id'))
+                )
+                ->getArrayResult();
         $html = '';
         foreach ($q as $k => $tracks):
             $html .= '<tr>'."\n";
@@ -96,6 +111,8 @@ class DefaultController extends Controller
             $html .= '  <td>'.$tracks['trLongitud'].'</td>'."\n";
             $html .= '</tr>'."\n";
         endforeach;
+        if (count($q1))
+            $q = array_merge($q, array(array('biId' => $q1[0]['biId'])));
 
         return new Response(Util::getJSON(array_merge($q, array(array('html' => $html)))));
     }
@@ -115,24 +132,45 @@ class DefaultController extends Controller
             if ($imagen instanceof UploadedFile && $imagen->getError() == '0'):
                 $al = $this->getDoctrine()->getRepository('TodoBundle:Albums')->find($request->get('alId'));
                 $bi = new Binarios();
-                $bi->setBiNombre($imagen->getClientOriginalName());
+                $bi->setBiNombre(stristr($imagen->getClientOriginalName(), '.', true));
                 $bi->setBiTamanioBytes(intval($imagen->getClientSize()));
                 $bi->setBiBin(file_get_contents($imagen->getFileInfo()));
-                $bi->setBiExt($imagen->getMimeType());
+                $bi->setBiExt($imagen->getClientOriginalExtension());
                 $bi->setAlbumsAl($al);
 
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($bi);
-                $em->flush();
+                $em->flush();                
                 echo "<pre>";
-                echo $imagen->getClientOriginalName().'<br />';
+                echo stristr($imagen->getClientOriginalName(), '.', true).'<br />';
                 echo ceil($imagen->getClientSize() / 1024).' KB<br />';
                 echo $imagen->getFileInfo().'<br />';
-                echo $imagen->getMimeType().'<br />';
+                echo $imagen->getClientOriginalExtension().'<br />';
                 echo "</pre>";
-                die();
+
+                return new RedirectResponse($this->generateUrl('todo_homepage'));
             endif;
-        endif;
+        endif;        
+    }
+    
+    public function viewImageAction($id) {
+        $dql = Util::getAllAlBi();
+        $dql .= 'WHERE al.alId = :id ';
+        $em = $this->getDoctrine()->getEntityManager();
+        $q = $em->createQuery($dql)
+                ->setParameter('id', $id)
+                ->getScalarResult();
+        $response = new Response();
+        $response->setContent(stream_get_contents($q[0]['bi_biBin']));
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->headers->set('Content-type', 'image/jpeg');
+        $response->send();
+//        $response = new Response(stream_get_contents($q[0]['bi_biBin']), 200, array('Content-Type' => 'image/jpeg'));
+//        return $response;
         
+//        echo "<pre>";
+//        print_r($q);
+//        echo "</pre>";
+//        die();
     }
 }
