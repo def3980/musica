@@ -160,13 +160,30 @@ class DefaultController extends Controller
         $q = $em->createQuery($dql)
                 ->setParameter('id', $id)
                 ->getScalarResult();
-        $response = new Response();
-        $response->setContent(stream_get_contents($q[0]['bi_biBin']));
-        $response->setStatusCode(Response::HTTP_OK);
-        $response->headers->set('Content-type', 'image/jpeg');
-        $response->send();
+//        $response = new Response();
+//        $response->setContent(stream_get_contents($q[0]['bi_biBin']));
+//        $response->setStatusCode(Response::HTTP_OK);
+//        $response->headers->set('Content-type', 'image/jpeg');
+//        $response->send();
 //        $response = new Response(stream_get_contents($q[0]['bi_biBin']), 200, array('Content-Type' => 'image/jpeg'));
 //        return $response;
+        
+//        $response = new Response(stream_get_contents($q[0]['bi_biBin']), 200);
+//        $response->headers->set('Content-Type', 'image/jpeg');
+//
+//        return $response;
+        
+        $image  = "3_door_down_tgh.jpg";
+        $file   = readfile("C:/xampp/htdocs/musica/web/uploads/images");
+        $headers= array(
+        'Content-Type'     => 'image/jpeg',
+        'Content-Disposition' => 'inline; filename="'.$image.'"');
+        return new Response($file, 200, $headers);
+        
+//        echo "<pre>";
+//        echo __DIR__.'\..\..\..\..\web\\';
+//        echo "</pre>";
+//        die();
         
 //        echo "<pre>";
 //        print_r($q);
