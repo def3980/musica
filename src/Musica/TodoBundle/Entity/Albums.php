@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Albums
  *
- * @ORM\Table(name="albums", indexes={@ORM\Index(name="fk_albums_artistas1_idx", columns={"artistas_ar_id"})})
+ * @ORM\Table(name="""musica"."albums""", indexes={@ORM\Index(name="IDX_137DA86766589A5A", columns={"artistas_ar_id"})})
  * @ORM\Entity
  */
 class Albums
@@ -15,9 +15,10 @@ class Albums
     /**
      * @var integer
      *
-     * @ORM\Column(name="al_id", type="integer")
+     * @ORM\Column(name="al_id", type="bigint")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="musica.albums_al_id_seq", allocationSize=1, initialValue=1)
      */
     private $alId;
 
@@ -31,7 +32,7 @@ class Albums
     /**
      * @var string
      *
-     * @ORM\Column(name="al_anio", type="string", length=5, nullable=true)
+     * @ORM\Column(name="al_anio", type="string", nullable=true)
      */
     private $alAnio;
 
@@ -66,7 +67,7 @@ class Albums
     public function setAlNombre($alNombre)
     {
         $this->alNombre = $alNombre;
-
+    
         return $this;
     }
 
@@ -89,7 +90,7 @@ class Albums
     public function setAlAnio($alAnio)
     {
         $this->alAnio = $alAnio;
-
+    
         return $this;
     }
 
@@ -112,7 +113,7 @@ class Albums
     public function setArtistasAr(\Musica\TodoBundle\Entity\Artistas $artistasAr = null)
     {
         $this->artistasAr = $artistasAr;
-
+    
         return $this;
     }
 

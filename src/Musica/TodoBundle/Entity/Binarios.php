@@ -7,24 +7,25 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Binarios
  *
- * @ORM\Table(name="binarios", indexes={@ORM\Index(name="fk_binarios_albums1_idx", columns={"albums_al_id"})})
- * @ORM\Entity
+ * @ORM\Table(name="""musica"."binarios""", indexes={@ORM\Index(name="IDX_BFDF38C4DADE7FBA", columns={"albums_al_id"})})
+ * @ORM\Entity(repositoryClass="Musica\TodoBundle\Entity\BinariosRepository")
  */
 class Binarios
 {
     /**
      * @var integer
      *
-     * @ORM\Column(name="bi_id", type="integer")
+     * @ORM\Column(name="bi_id", type="bigint")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="musica.binarios_bi_id_seq", allocationSize=1, initialValue=1)
      */
     private $biId;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="bi_nombre", type="string", length=254, nullable=true)
+     * @ORM\Column(name="bi_nombre", type="string", length=100, nullable=true)
      */
     private $biNombre;
 
@@ -45,9 +46,16 @@ class Binarios
     /**
      * @var string
      *
-     * @ORM\Column(name="bi_ext", type="string", length=100, nullable=true)
+     * @ORM\Column(name="bi_extension", type="string", length=100, nullable=true)
      */
-    private $biExt;
+    private $biExtension;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="bi_ruta", type="string", length=255, nullable=true)
+     */
+    private $biRuta;
 
     /**
      * @var \Musica\TodoBundle\Entity\Albums
@@ -80,7 +88,7 @@ class Binarios
     public function setBiNombre($biNombre)
     {
         $this->biNombre = $biNombre;
-
+    
         return $this;
     }
 
@@ -103,7 +111,7 @@ class Binarios
     public function setBiTamanioBytes($biTamanioBytes)
     {
         $this->biTamanioBytes = $biTamanioBytes;
-
+    
         return $this;
     }
 
@@ -126,7 +134,7 @@ class Binarios
     public function setBiBin($biBin)
     {
         $this->biBin = $biBin;
-
+    
         return $this;
     }
 
@@ -141,26 +149,49 @@ class Binarios
     }
 
     /**
-     * Set biExt
+     * Set biExtension
      *
-     * @param string $biExt
+     * @param string $biExtension
      * @return Binarios
      */
-    public function setBiExt($biExt)
+    public function setBiExtension($biExtension)
     {
-        $this->biExt = $biExt;
-
+        $this->biExtension = $biExtension;
+    
         return $this;
     }
 
     /**
-     * Get biExt
+     * Get biExtension
      *
      * @return string 
      */
-    public function getBiExt()
+    public function getBiExtension()
     {
-        return $this->biExt;
+        return $this->biExtension;
+    }
+
+    /**
+     * Set biRuta
+     *
+     * @param string $biRuta
+     * @return Binarios
+     */
+    public function setBiRuta($biRuta)
+    {
+        $this->biRuta = $biRuta;
+    
+        return $this;
+    }
+
+    /**
+     * Get biRuta
+     *
+     * @return string 
+     */
+    public function getBiRuta()
+    {
+        return $this->biRuta;
     }
 
     /**
@@ -172,7 +203,7 @@ class Binarios
     public function setAlbumsAl(\Musica\TodoBundle\Entity\Albums $albumsAl = null)
     {
         $this->albumsAl = $albumsAl;
-
+    
         return $this;
     }
 

@@ -1,49 +1,57 @@
 Musica\TodoBundle\Entity\Binarios:
     type: entity
-    table: binarios
+    table: musica.binarios
+    repositoryClass: Musica\TodoBundle\Entity\BinariosRepository
     indexes:
-        fk_binarios_albums1_idx:
+        IDX_BFDF38C4DADE7FBA:
             columns:
                 - albums_al_id
     id:
         biId:
-            type: integer
+            type: bigint
             nullable: false
             unsigned: false
-            comment: Identificacdor
+            comment: ''
             id: true
             column: bi_id
             generator:
-                strategy: IDENTITY
+                strategy: SEQUENCE
     fields:
         biNombre:
             type: string
             nullable: true
-            length: 254
+            length: 100
             fixed: false
-            comment: 'Nombre del archivo de imagen, pdf, docx, xlsx, etc...'
+            comment: 'Nombre del archivo de imagen'
             column: bi_nombre
         biTamanioBytes:
             type: decimal
             nullable: true
             precision: 10
             scale: 2
-            comment: 'Tamanio del archivo binario'
+            comment: 'Tamanio de la imagen en bytes'
             column: bi_tamanio_bytes
         biBin:
             type: blob
             nullable: true
             length: null
             fixed: false
-            comment: 'Contenido binario del archivo.'
+            comment: 'Informacion binaria del archivo de imagen'
             column: bi_bin
-        biExt:
+        biExtension:
             type: string
             nullable: true
             length: 100
             fixed: false
-            comment: 'Extension del archivo subido a la base de datos'
-            column: bi_ext
+            comment: 'Extention de la imagen'
+            column: bi_extension
+        biRuta:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            comment: 'Ruta donde se ubica de forma fisica el archivo'
+            column: bi_ruta
     manyToOne:
         albumsAl:
             targetEntity: Albums

@@ -111,8 +111,9 @@ class DefaultController extends Controller
             $html .= '  <td>'.$tracks['trLongitud'].'</td>'."\n";
             $html .= '</tr>'."\n";
         endforeach;
+        $q = array_merge($q, array(array('cont' => count($q))));
         if (count($q1))
-            $q = array_merge($q, array(array('biId' => $q1[0]['biId'])));
+            $q = array_merge($q, array(array('cover' => $this->generateUrl('todo_image', array('id' => $q1[0]['biId'])))));
 
         return new Response(Util::getJSON(array_merge($q, array(array('html' => $html)))));
     }
@@ -126,68 +127,28 @@ class DefaultController extends Controller
     }
     
     public function uploadAction(Request $request) {
-        
         if ($request->getMethod() == 'POST'):
             $imagen = $request->files->get('cover');
             if ($imagen instanceof UploadedFile && $imagen->getError() == '0'):
-                $al = $this->getDoctrine()->getRepository('TodoBundle:Albums')->find($request->get('alId'));
-                $bi = new Binarios();
-                $bi->setBiNombre(stristr($imagen->getClientOriginalName(), '.', true));
-                $bi->setBiTamanioBytes(intval($imagen->getClientSize()));
-                $bi->setBiBin(file_get_contents($imagen->getFileInfo()));
-                $bi->setBiExt($imagen->getClientOriginalExtension());
-                $bi->setAlbumsAl($al);
-
-                $em = $this->getDoctrine()->getManager();
-                $em->persist($bi);
-                $em->flush();                
-                echo "<pre>";
-                echo stristr($imagen->getClientOriginalName(), '.', true).'<br />';
-                echo ceil($imagen->getClientSize() / 1024).' KB<br />';
-                echo $imagen->getFileInfo().'<br />';
-                echo $imagen->getClientOriginalExtension().'<br />';
-                echo "</pre>";
-
+                $c = $this->getDoctrine()->getRepository('TodoBundle:Binarios')->count($request->get('alId'));
+                $params = array(
+                            'biNombre'       => stristr($imagen->getClientOriginalName(), '.', true),
+                            'biTamanioBytes' => intval($imagen->getClientSize()),
+                            'biBin'          => file_get_contents($imagen->getFileInfo()),
+                            'biExtension'    => $imagen->getClientOriginalExtension(),
+                          );
+                switch ($c):
+                    case ($c>0): $this->getDoctrine()->getRepository('TodoBundle:Binarios')->actualizar($request->get('alId'), $params); break;
+                    default: $this->getDoctrine()->getRepository('TodoBundle:Binarios')->insertar($request->get('alId'), $params); break;
+                endswitch;
                 return new RedirectResponse($this->generateUrl('todo_homepage'));
             endif;
-        endif;        
+        endif;
     }
     
     public function viewImageAction($id) {
-        $dql = Util::getAllAlBi();
-        $dql .= 'WHERE al.alId = :id ';
-        $em = $this->getDoctrine()->getEntityManager();
-        $q = $em->createQuery($dql)
-                ->setParameter('id', $id)
-                ->getScalarResult();
-//        $response = new Response();
-//        $response->setContent(stream_get_contents($q[0]['bi_biBin']));
-//        $response->setStatusCode(Response::HTTP_OK);
-//        $response->headers->set('Content-type', 'image/jpeg');
-//        $response->send();
-//        $response = new Response(stream_get_contents($q[0]['bi_biBin']), 200, array('Content-Type' => 'image/jpeg'));
-//        return $response;
-        
-//        $response = new Response(stream_get_contents($q[0]['bi_biBin']), 200);
-//        $response->headers->set('Content-Type', 'image/jpeg');
-//
-//        return $response;
-        
-        $image  = "3_door_down_tgh.jpg";
-        $file   = readfile("C:/xampp/htdocs/musica/web/uploads/images");
-        $headers= array(
-        'Content-Type'     => 'image/jpeg',
-        'Content-Disposition' => 'inline; filename="'.$image.'"');
-        return new Response($file, 200, $headers);
-        
-//        echo "<pre>";
-//        echo __DIR__.'\..\..\..\..\web\\';
-//        echo "</pre>";
-//        die();
-        
-//        echo "<pre>";
-//        print_r($q);
-//        echo "</pre>";
-//        die();
+        $item = $this->getDoctrine()->getRepository('TodoBundle:Binarios')->find($id);
+        if (!$item) throw $this->createNotFoundException("File with ID $id does not exist!");
+        return new Response(stream_get_contents($item->getBiBin()), 200, array('Content-Type' => 'image/jpeg'));
     }
 }

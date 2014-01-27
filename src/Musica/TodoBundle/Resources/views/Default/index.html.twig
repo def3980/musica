@@ -125,7 +125,7 @@
                     <div class="panel-body">
                         <div class="media">
                             <a class="pull-left" href="#">
-                                <img class="img media-object" src="{% if cover | length %}{{ path('todo_image', { 'id' : cover.0.albumsAl.alId }) }}{% else %}holder.js/64x64{% endif %}" height="64" width="64" alt="Generic placeholder image">
+                                <img class="img media-object" src="{% if cover | length %}{{ path('todo_image', { 'id' : cover.0.albumsAl.alId }) }}{% else %}{{ asset('uploads/images/3_door_down_tgh.jpg') }}{% endif %}" height="64" width="64" alt="Generic placeholder image">
                             </a>
                             <div class="media-body">
                                 <h4 class="media-heading">{{ tracks.0.albumsAl.alNombre }}</h4>
@@ -193,9 +193,12 @@
 
                 
                 /** ------- CARGANDO LISTA DE OPCIONES CON TYPEAHEAD CON AJAX */
-                var array = [];
+                var array = []; var objIds = new Object();
                 $.getJSON('{{ path('todo_search') }}', function(data) {
-                    $.each(data, function(i,o) { array.push(o.alNombre); });
+                    $.each(data, function(i,o) { 
+                        array.push(o.alNombre);
+                        objIds[o.alNombre] = o.alId;
+                    });
                 });
                 $('.form-control').typeahead({ source : array });
                 /** --------------------------------------------------------- */
@@ -204,9 +207,10 @@
                 $('.selectpicker').change(function() {
                     $('#alId').val($(this).val());
                     $.get('{{ path('todo_data') }}', { id : $(this).val() } , function(data) {
+                        $('.img').attr('src', data[data.length - 2].cover ? data[data.length - 2].cover : '{{ asset('uploads/images/3_door_down_tgh.jpg') }}');
                         $('.panel-heading strong').text(data[0].albumsAl.artistasAr.arNombre);
                         $('.media-heading').text(data[0].albumsAl.alNombre);
-                        $('#cant').text(data.length - 1);
+{#                        $('#cant').text(data[data.length - 3].cont);#} alert(data[data.length - 3].cont);
                         $('.table tbody').html(data[data.length - 1].html);
                     },'json');
                 });
@@ -214,12 +218,15 @@
                 
                 /** --------- REALIZANDO CONSULTA AJAX Y CARGANDO EN LA TABLA */
                 $('#btnBuscar').bind('click', function() {
-                    $.getJSON('{{ path('todo_data') }}', { id : $('.form-control').val(), opc : 'like' } , function(data) {
+                    $('.selectpicker').selectpicker('val', objIds[$('.form-control').val()]);
+                    $('.selectpicker').selectpicker('refresh');
+                    {#$.getJSON('{{ path('todo_data') }}', { id : $('.form-control').val(), opc : 'like' } , function(data) {
+                        $('.img').attr('src', data[data.length - 2].cover ? data[data.length - 2].cover : '{{ asset('uploads/images/3_door_down_tgh.jpg') }}');
                         $('.panel-heading strong').text(data[0].albumsAl.artistasAr.arNombre);
                         $('.media-heading').text(data[0].albumsAl.alNombre);
                         $('#cant').text(data.length - 1);
                         $('.table tbody').html(data[data.length - 1].html);
-                    });
+                    });#}
                 });
                 /** --------------------------------------------------------- */
                 $.ajaxSetup({ async: true });

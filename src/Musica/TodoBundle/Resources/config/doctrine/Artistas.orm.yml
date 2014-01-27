@@ -1,22 +1,22 @@
 Musica\TodoBundle\Entity\Artistas:
     type: entity
-    table: artistas
+    table: musica.artistas
     id:
         arId:
-            type: integer
+            type: bigint
             nullable: false
             unsigned: false
-            comment: Identificacdor
+            comment: ''
             id: true
             column: ar_id
             generator:
-                strategy: IDENTITY
+                strategy: SEQUENCE
     fields:
         arNombre:
             type: string
             nullable: true
             length: 100
             fixed: false
-            comment: 'Nombre del artista o banda dueña de varios albums'
+            comment: 'Nombre del grupo musical o artista dueño de varios albums'
             column: ar_nombre
     lifecycleCallbacks: {  }

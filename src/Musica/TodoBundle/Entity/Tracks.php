@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Tracks
  *
- * @ORM\Table(name="tracks", indexes={@ORM\Index(name="fk_tracks_albums_idx", columns={"albums_al_id"})})
+ * @ORM\Table(name="""musica"."tracks""", indexes={@ORM\Index(name="IDX_C3F2C506DADE7FBA", columns={"albums_al_id"})})
  * @ORM\Entity
  */
 class Tracks
@@ -15,9 +15,10 @@ class Tracks
     /**
      * @var integer
      *
-     * @ORM\Column(name="tr_id", type="integer")
+     * @ORM\Column(name="tr_id", type="bigint")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="musica.tracks_tr_id_seq", allocationSize=1, initialValue=1)
      */
     private $trId;
 
@@ -31,7 +32,7 @@ class Tracks
     /**
      * @var string
      *
-     * @ORM\Column(name="tr_longitud", type="string", length=5, nullable=true)
+     * @ORM\Column(name="tr_longitud", type="string", nullable=true)
      */
     private $trLongitud;
 
@@ -66,7 +67,7 @@ class Tracks
     public function setTrNombre($trNombre)
     {
         $this->trNombre = $trNombre;
-
+    
         return $this;
     }
 
@@ -89,7 +90,7 @@ class Tracks
     public function setTrLongitud($trLongitud)
     {
         $this->trLongitud = $trLongitud;
-
+    
         return $this;
     }
 
@@ -112,7 +113,7 @@ class Tracks
     public function setAlbumsAl(\Musica\TodoBundle\Entity\Albums $albumsAl = null)
     {
         $this->albumsAl = $albumsAl;
-
+    
         return $this;
     }
 

@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Artistas
  *
- * @ORM\Table(name="artistas")
+ * @ORM\Table(name="""musica"."artistas""")
  * @ORM\Entity
  */
 class Artistas
@@ -15,9 +15,10 @@ class Artistas
     /**
      * @var integer
      *
-     * @ORM\Column(name="ar_id", type="integer")
+     * @ORM\Column(name="ar_id", type="bigint")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="musica.artistas_ar_id_seq", allocationSize=1, initialValue=1)
      */
     private $arId;
 
@@ -49,7 +50,7 @@ class Artistas
     public function setArNombre($arNombre)
     {
         $this->arNombre = $arNombre;
-
+    
         return $this;
     }
 
